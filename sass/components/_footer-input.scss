@@ -1,0 +1,26 @@
+.footer-subscription-form {
+  margin-left: 93px;
+}
+.footer-input {
+  width: 358px;
+  height: 52px;
+  padding: 11px 12px;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  transition-property: border;
+  @extend %transition-time;
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    outline: transparent;
+  }
+}
+
+.icon-telegram {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}

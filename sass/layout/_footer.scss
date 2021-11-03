@@ -1,0 +1,17 @@
+footer {
+  background-color: #2f303a;
+}
+
+.footer-info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}

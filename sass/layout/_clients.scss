@@ -1,0 +1,57 @@
+.clients {
+  display: flex;
+}
+
+.client {
+  display: flex;
+  height: 92px;
+  width: 170px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  justify-content: center;
+  align-items: center;
+  transition-property: border-color;
+  @extend %transition-time;
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients .item + .item {
+  margin-left: 30px;
+}
+
+.client-logo {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .client:focus &,
+  .client:hover & {
+    fill: var(--accent-color);
+  }
+}
+
+.client-logo-one {
+  width: 41px;
+  height: 46.7px;
+}
+.client-logo-two {
+  width: 40px;
+  height: 52px;
+}
+.client-logo-three {
+  width: 43.46px;
+  height: 41.18px;
+}
+.client-logo-four {
+  width: 84.44px;
+  height: 40.62;
+}
+.client-logo-five {
+  width: 62.54px;
+  height: 45.43px;
+}
+.client-logo-six {
+  width: 106.6px;
+  height: 60px;
+}

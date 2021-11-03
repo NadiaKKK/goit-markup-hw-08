@@ -1,0 +1,31 @@
+.footer-social-links {
+  margin-left: 70px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link {
+  @extend %align-items;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition-property: background-color;
+  @extend %transition-time;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.social-links .item + .item {
+  margin-left: 10px;
+}
+
+.icon {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}

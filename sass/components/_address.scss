@@ -1,0 +1,27 @@
+.address {
+  font-style: normal;
+
+  @include font(400, 14px, 1.71, 0);
+
+  list-style-type: none;
+}
+.address-city {
+  color: #ffffff;
+}
+
+.address__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  @extend %transition-time;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  & .address__link:hover,
+  &.address__link:focus {
+    color: var(--accent-color);
+  }
+}

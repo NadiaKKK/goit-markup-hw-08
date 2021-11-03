@@ -1,0 +1,34 @@
+.social-links {
+  @extend %align-items;
+  margin-top: 16px;
+}
+
+.social-link {
+  @extend %align-items;
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+  transition-property: background-color;
+  @extend %transition-time;
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    transition-property: background-color;
+    @extend %transition-time;
+  }
+}
+
+.socials-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:focus svg,
+.social-link:hover svg {
+  fill: #fff;
+}
+
+.social-links .item + .item {
+  margin-left: 10px;
+}
