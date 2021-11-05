@@ -5,7 +5,7 @@
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.card-set > .item {
+.card-set > .card {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);

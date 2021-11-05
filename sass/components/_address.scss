@@ -5,7 +5,7 @@
 
   list-style-type: none;
 }
-.address-city {
+.address__city {
   color: #ffffff;
 }
 
@@ -15,13 +15,13 @@
 
   transition-property: color;
   @extend %transition-time;
+
+  .address__item &:hover,
+  .address__item &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address__item {
   margin-bottom: 9px;
-
-  & .address__link:hover,
-  &.address__link:focus {
-    color: var(--accent-color);
-  }
 }

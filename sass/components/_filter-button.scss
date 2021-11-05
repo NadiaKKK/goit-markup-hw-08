@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
   @include font(500, 16px, 1.62, 0 03em);
   text-align: center;
@@ -22,6 +22,6 @@
   }
 }
 
-.filter .item + .item {
+.filter__item:not(first-child) {
   margin-left: 12px;
 }

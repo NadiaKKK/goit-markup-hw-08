@@ -1,9 +1,9 @@
-.social-links {
+.social {
   @extend %align-items;
   margin-top: 16px;
 }
 
-.social-link {
+.social__link {
   @extend %align-items;
   height: 44px;
   width: 44px;
@@ -18,17 +18,17 @@
   }
 }
 
-.socials-icon {
+.social__icon {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
-.social-link:focus svg,
-.social-link:hover svg {
+.social__link:focus svg,
+.social__link:hover svg {
   fill: #fff;
 }
 
-.social-links .item + .item {
+.social__links .item + .item {
   margin-left: 10px;
 }

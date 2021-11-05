@@ -1,12 +1,16 @@
-.footer-social-links {
+.footer-social {
   margin-left: 70px;
 }
 
-.social-links {
+.social {
   display: flex;
+
+  & .item + .item {
+    margin-left: 10px;
+  }
 }
 
-.social-link {
+.social__link {
   @extend %align-items;
   height: 44px;
   width: 44px;
@@ -18,10 +22,6 @@
   &:hover {
     background-color: var(--accent-color);
   }
-}
-
-.social-links .item + .item {
-  margin-left: 10px;
 }
 
 .icon {

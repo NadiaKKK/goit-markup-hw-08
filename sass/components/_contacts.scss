@@ -7,9 +7,9 @@
   margin-left: 50px;
 }
 
-.contacts__item:not(:last-child) {
-  margin-left: 50px;
-}
+// .contacts__item:not(:last-child) {
+//   margin-left: 50px;
+// }
 
 .contacts__link {
   display: flex;
@@ -25,7 +25,7 @@
   }
 }
 
-.contacts__img {
+.contacts__icon {
   fill: currentColor;
   width: 20px;
   height: 16px;

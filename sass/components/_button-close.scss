@@ -17,7 +17,8 @@
   transition-property: background-color;
   @extend %transition-time;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
   }
 }
