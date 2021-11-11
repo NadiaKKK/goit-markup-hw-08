@@ -1,5 +1,14 @@
 .footer-social {
-  margin-left: 70px;
+  flex: 0 0 100%;
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    flex: 0 0 50%;
+    margin-top: 0;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 70px;
+    flex: 1;
+  }
 }
 
 .social {

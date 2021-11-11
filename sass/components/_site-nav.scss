@@ -4,9 +4,15 @@
 }
 
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
+
 
 .site-nav__item {
   margin-left: 50px;

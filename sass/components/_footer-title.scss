@@ -3,4 +3,10 @@
   @include font(bold, 14px, 1.14, 0.03em);
 
   margin-bottom: 20px;
+
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
 }

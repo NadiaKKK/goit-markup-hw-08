@@ -1,0 +1,77 @@
+.mob-menu{
+	position: fixed;
+	background: #fff;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0; 
+	transition: all .3s;
+	padding: 48px 20px 40px 20px;
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 480px) {
+		padding: 48px 40px 40px 40px;
+	}
+
+	&.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.menu-close-btn{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: none;
+    	background: 0 0;
+
+		.button-close__icon {
+			width: 28px;
+			height: 28px;
+		}
+
+	}
+
+	&__item {
+		& + .mob-menu__item {
+			margin-top: 30px;
+		}
+	}
+
+	&__link {
+		font-size: 40px;
+		color: #212121;
+		text-decoration: none;
+		&:hover {
+			color: var(--accent-color);
+		}
+	}
+
+	&__phone {
+		color: var(--accent-color);
+		font-size: 28px;
+		margin-bottom: 30px;
+		text-decoration: none;
+		display: block;
+		margin-top: auto;
+		font-weight: bold;
+		@media (min-width: 480px) {
+			font-size: 34px;
+		}
+		
+	}
+
+	&__email {
+		font-size: 24px;
+		color: #757575;
+		margin-bottom: 45px;
+		text-decoration: none;
+		display: block;
+	}
+
+	&__socials {
+		display: flex;
+		align-items: center;
+		
+	}
+}
